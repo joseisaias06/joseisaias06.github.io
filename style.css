@@ -1,5 +1,4 @@
 .background-primary{
-    /*background: linear-gradient(108.08deg, #536976 0.54%, #292E49 100%);*/
     background-color: #1b2d40;
 }
 
@@ -48,6 +47,10 @@
     .home-section{
         width: 700px;
     }
+
+    #home-title{
+        text-align: center;
+    }
 }
 
 .home-section .text-description{
@@ -57,6 +60,12 @@
     line-height: 35px;
 }
 
+@media (max-width: 450px) {
+    .home-section .text-description{
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
 .about-section{
 
     width: 950px;
@@ -125,6 +134,17 @@
 
 }
 
+@media (max-width: 450px) {
+    .about-section .about-container .text-description{    
+        font-size: 18px;
+        line-height: 30px;
+        margin: 0px 0px 0px 0px;
+    }
+    .about-section #about-title{
+        text-align: center;
+    }
+}
+
 .skills-section{
     
     width: 800px;
@@ -148,6 +168,12 @@
     margin-top: 6px;
     pointer-events: none;
     margin-right: 4px;
+}
+
+@media (max-width: 450px) {
+    .skills-section #skills-title{
+        text-align: center;
+    }
 }
 
 
@@ -301,29 +327,46 @@
     
 }
 
-@media (max-width: 520px) {
+
+
+@media (max-width: 658px){
+    .project-card{
+        height: 480px;
+    }
     .project-card .project-title{
-        margin: 0px 10px 10px 10px;
-        color: white;
-    }   
-    .project-card .project-description{
-        margin: 10px;
-        color: white;
+        display: flex;
     }
-    .project-card .project-description-tags{
-        margin: 10px 10px 10px 10px;
-    
+    .project-card figure{
+        height: 480px;
     }
-    .project-card .project-description-buttons{
-        margin: 10px 10px 10px 10px;
-    }
-    .project-card .button-tag{
-        color: white;
-        background-color: #292E49;
-        margin-right: 8px;
+    .project-card img{
+        height: 480px;
     }
 }
 
+@media (max-width: 500px){
+    .project-card .project-title{
+        font-size: 30px;
+    }
+    .project-card .project-description{
+        font-size: 16px;
+    }
+    .project-card .project-description-tags{
+        margin: 10px 10px 5px 10px;
+    }
+    .project-card .project-description-buttons{
+        margin: 10px 10px 0px 10px;
+    }
+    .project-card{
+        height: 580px;
+    }
+    .project-card figure{
+        height: 580px;
+    }
+    .project-card img{
+        height: 580px;
+    }
+}
 
 .contact-section{
     
@@ -493,7 +536,7 @@ display: none;
         display: inline-block;
         position: absolute;
         right: 0px;
-        top: 0px;
+        top: 10px;
     }
     .nav > .nav-btn > label {
         display: inline-block;
@@ -553,6 +596,10 @@ display: none;
     .nav > .nav-links > p.line {
         display: none;
     }
+}
+
+@media (max-width: 640px){
+
 }
 
 ::-webkit-scrollbar
