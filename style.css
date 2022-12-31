@@ -78,6 +78,15 @@
     #home-title span{
         display: block;
     }
+
+    #home-title span a{
+        text-decoration: none;
+        color: #f6f9fa;
+    }
+    
+    #home-title span a:hover{
+        color: #5cebcb;
+    }
 }
 .about-section{
 
@@ -154,8 +163,9 @@
 
     .about-me-picture{
         width: 310px;
-        max-width: 100%;
+        max-width: 310px;
         height: 370px;
+        max-height: 370px;
     
         display: flex;
         justify-content: center;
@@ -167,8 +177,11 @@
     
     .about-me-picture figure{
         background-color: #5cebcb;
-        width: 300px;
-        max-height: 500px;
+        width: 310px;
+        max-width: 310px;
+        height: 370px;
+        max-height: 370px;
+
         margin: 0;
     
         border-radius: 10px;
