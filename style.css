@@ -61,6 +61,15 @@
     line-height: 35px;
 }
 
+#home-title span a{
+    text-decoration: none;
+    color: #f6f9fa;
+}
+
+#home-title span a:hover{
+    color: #5cebcb;
+}
+
 @media (max-width: 450px) {
     .home-section .text-description{
         font-size: 16px;
@@ -97,7 +106,6 @@
 
 .about-section .about-container img{
 
-    margin: 10px;
     transition: .5s ease;
     opacity: .4;
     width: 200px;
@@ -105,6 +113,8 @@
     margin: auto;
     height: 250px;
     max-height: 500px;
+
+    border-radius: 4px;
 }
 
 .about-section .about-container img:hover{
@@ -129,16 +139,72 @@
     max-width: 100%;
     height: 250px;
     max-height: 500px;
+
+    border-radius: 4px;
 }
 
-@media (max-width:992px){
+.about-me-picture{
+    display: none;
+}
+
+@media (max-width:768px){
     .about-section .about-container figure{
         display: none;
+    }
+
+    .about-me-picture{
+        width: 310px;
+        max-width: 100%;
+        height: 370px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    
+        border-radius: 15px;
+    }
+    
+    .about-me-picture figure{
+        background-color: #5cebcb;
+        width: 300px;
+        max-height: 500px;
+        margin: 0;
+    
+        border-radius: 10px;
+    }
+    
+    .about-me-picture img{
+        transition: .5s ease;
+        opacity: .4;
+        width: 300px;
+        max-height: 500px;
+    
+        border-radius: 10px;
+    }
+    
+    .about-me-picture img:hover{
+    
+        opacity: 1;
+        box-shadow:
+        1px 1px #373737,
+        2px 2px #373737,
+        3px 3px #373737,
+        4px 4px #373737,
+        5px 5px #373737,
+        6px 6px #373737;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+        transition: .4s ease;
     }
 
 }
 
 @media (max-width: 450px) {
+    .about-section{
+        max-width: 80%;
+    }
+
     .about-section .about-container .text-description{    
         font-size: 18px;
         line-height: 30px;
@@ -155,7 +221,7 @@
     max-width: 90%;
     min-width: 400px;
 
-    margin: 50px 0px 150px 0px;
+    margin: 50px 0px 50px 0px;
 }
 
 .skills-section .skills-content {
@@ -179,7 +245,6 @@
         text-align: center;
     }
 }
-
 
 .projects-section{
     
@@ -389,6 +454,18 @@
     margin-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
+
+    /*
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+        linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+        linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
+        linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+    background-repeat: no-repeat;
+    background-size: 4px 50%, 50% 4px, 4px 50%, 50% 4px, calc(100% - 8px) calc(100% - 8px);
+    background-position: left bottom, left bottom, right top, right top, 4px 4px;
+    */
 }
 
 .contact-section .paragraph-text{
@@ -491,6 +568,10 @@ margin: 10px 10px 10px 10px;
 text-decoration: none;
 }
 
+.nav > .nav-header > .nav-title > a:hover{
+    color:#5cebcb;
+}
+
 .nav > .nav-btn {
 display: none;
 }
@@ -513,6 +594,18 @@ color: #efefef;
     padding: 13px 0px 13px 0px;
     color: #efefef;
 }
+
+/*
+.nav > .nav-links > a:not(:last-child) {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
+        linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
+        linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
+        linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    background-repeat: no-repeat;
+    background-size: 0px 50%, 50% 0px, 2px 40%, 50% 0px, calc(50% - 8px) calc(50% - 8px);
+    background-position: left bottom, left bottom, right center, right top, 4px 4px;
+}
+*/
 
 .nav > .nav-links > a:hover {
     color: #898d91;
@@ -557,10 +650,7 @@ display: none;
         left: 0px;
 
         -webkit-backdrop-filter: blur(4px);
-        -moz-backdrop-filter: blur(4px);
-        -ms-backdrop-filter: blur(4px);
-        backdrop-filter: blur(4px);
-        
+        backdrop-filter: blur(4px);        
 
     }
     .nav > .nav-links > a {
@@ -604,5 +694,5 @@ display: none;
 {
 	background-color: #898d91;
 	border: 2px solid #898d91;
-	border-radius: 2px;
+    border-radius: 2px;
 }
