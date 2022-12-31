@@ -176,9 +176,10 @@
     
     .about-me-picture figure{
         background-color: #5cebcb;
-        width: 310px;
-        max-width: 100%;
-
+        width: 300px;
+        max-width: 300px;
+        height: 360px;
+        max-height: 360px;
         margin: 0;
     
         border-radius: 10px;
@@ -188,7 +189,9 @@
         transition: .5s ease;
         opacity: .4;
         width: 300px;
-        max-height: 500px;
+        max-width: 300px;
+        height: 360px;
+        max-height: 360px;
     
         border-radius: 10px;
     }
