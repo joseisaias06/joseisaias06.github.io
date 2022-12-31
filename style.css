@@ -1,4 +1,5 @@
 .background-primary{
+    /*background: linear-gradient(108.08deg, #536976 0.54%, #292E49 100%);*/
     background-color: #1b2d40;
 }
 
@@ -64,6 +65,9 @@
     .home-section .text-description{
         font-size: 16px;
         line-height: 30px;
+    }
+    #home-title span{
+        display: block;
     }
 }
 .about-section{
@@ -305,6 +309,9 @@
     }
     .project-card img{
         opacity: 1;
+        -webkit-filter: brightness(0.1);
+        -moz-filter: brightness(0.1);
+        -ms-filter: brightness(0.1);
         filter: brightness(0.1);
         max-width: 100%;
     }
@@ -382,18 +389,6 @@
     margin-bottom: 200px;
     margin-left: auto;
     margin-right: auto;
-
-    /*
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
-        linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
-        linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0)),
-        linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
-    background-repeat: no-repeat;
-    background-size: 4px 50%, 50% 4px, 4px 50%, 50% 4px, calc(100% - 8px) calc(100% - 8px);
-    background-position: left bottom, left bottom, right top, right top, 4px 4px;
-    */
 }
 
 .contact-section .paragraph-text{
@@ -446,10 +441,19 @@
     color: rgb(87, 84, 84);
 }
 
+.contact-section .email-link{
+    text-decoration: none; 
+    color:#6c757d;
+}
+
 .footer{
     color: #DDDDDD;
     text-align: center;
     padding: 15px 0 15px 0;
+}
+
+.footer .footer-link{
+    color: #6c757d;
 }
 
 .reveal{
@@ -510,18 +514,6 @@ color: #efefef;
     color: #efefef;
 }
 
-/*
-.nav > .nav-links > a:not(:last-child) {
-    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
-        linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
-        linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
-        linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
-    background-repeat: no-repeat;
-    background-size: 0px 50%, 50% 0px, 2px 40%, 50% 0px, calc(50% - 8px) calc(50% - 8px);
-    background-position: left bottom, left bottom, right center, right top, 4px 4px;
-}
-*/
-
 .nav > .nav-links > a:hover {
     color: #898d91;
 }
@@ -564,7 +556,11 @@ display: none;
         top: 50px;
         left: 0px;
 
+        -webkit-backdrop-filter: blur(4px);
+        -moz-backdrop-filter: blur(4px);
+        -ms-backdrop-filter: blur(4px);
         backdrop-filter: blur(4px);
+        
 
     }
     .nav > .nav-links > a {
@@ -598,10 +594,6 @@ display: none;
     }
 }
 
-@media (max-width: 640px){
-
-}
-
 ::-webkit-scrollbar
 {
 	width: 6px;
@@ -612,6 +604,5 @@ display: none;
 {
 	background-color: #898d91;
 	border: 2px solid #898d91;
-    border-radius: 2px;
-    height: 50px;
+	border-radius: 2px;
 }
