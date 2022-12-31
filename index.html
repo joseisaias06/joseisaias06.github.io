@@ -2,11 +2,9 @@
 <html lang="es">
     <head>
         <!-- basic -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8" /> 
         <!-- mobile metas -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
         <!-- site metas -->
         <title>Isaias Olmos</title>
         <meta name="keywords" content="">
@@ -21,46 +19,7 @@
 
     </head>
     <body class="background-primary font-primary">
-        <header>
-            <!--
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid mx-5">
-                    <div class="d-flex flex-grow-1">
-                        <span class="w-100 d-lg-none d-block">
-                        </span>
-                        <a class="navbar-brand d-none d-lg-inline-block text-white" href="#"> Isaias Olmos </a>
-                        <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
-                            <img src="https://via.placeholder.com/40?text=LOGO" alt="logo">
-                        </a>
-                        <div class="w-100 text-right">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
-                        <ul class="navbar-nav ms-auto flex-nowrap">
-                            <li class="nav-item border-right-0">
-                                <a href="#Home" class="nav-link m-2 menu-item nav-active text-white" style="border-right: 4px; border-color: white;">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#About" class="nav-link m-2 menu-item text-white">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#Projects" class="nav-link m-2 menu-item text-white">Projects</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link m-2 menu-item text-white">Contact</a> 
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link m-2 menu-item text-white btn btn-primary">Resume</a> 
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            -->
-            
+        <header>   
             <div class="nav">
                 <input type="checkbox" id="nav-check">
                 <div class="nav-header" id="logo">
@@ -94,7 +53,7 @@
         
         <div id="Home" class="home-section background-secondary">
             
-            <h1 class="pt-4 secondary-text">Hi, my name is <span class="primary-text">Isaías Olmos</span></h1>
+            <h1 class="pt-4 secondary-text" id="home-title">Hi, my name is <span class="primary-text">Isaías Olmos</span></h1>
 
             <h1 class="mt-1 secondary-text"></h1>
             
@@ -107,7 +66,7 @@
         </div>
             
         <div id="About" class="about-section reveal">
-            <h1 class="py-2 primary-text">ABOUT ME</h1>
+            <h1 class="py-2 primary-text" id="about-title">ABOUT ME</h1>
             <div class="about-container background-secondary">
                 <p class="paragraph-text text-description">
                 Hello! My name is Isaías Olmos and I am a Computer Science student at the University of Sonora, Mexico. 
@@ -115,17 +74,15 @@
                 <br> 
                 <br>
                 I have cursed the following topics: Data Structures, Object Oriented Programming, Databases, Web Development, Software Engineering, Computer Networks, Image Processing, Artificial Intelligence and Machine Learning.
-                <br>
-                <br>
                 </p>
 
                 <figure>
-                    <img id="profile-photo" src="/images/profile.jpeg" alt="Personal Image"/>
+                    <img id="profile-photo" src="images/profile.jpeg" alt="Personal Image"/>
                 </figure>
             </div>
 
             <div id="Skills" class="skills-section reveal">
-                <h1 class="primary-text">SKILLS</h1>
+                <h1 class="primary-text" id="skills-title">SKILLS</h1>
                 <div class="skills-content background-secondary">
                     <button class="btn button-skill">Python</button> <button class="btn button-skill">C++</button> <button class="btn button-skill">Java</button> <button class="btn button-skill">MySQL</button> 
                     <button class="btn button-skill">JavaScript</button> <button class="btn button-skill">HTML</button> <button class="btn button-skill">CSS</button> 
@@ -143,14 +100,14 @@
                 
                 <div class="project-card background-secondary">
                     <div class="img-left">
-                        <a href="https://github.com/joseisaias06/LightsOutGame" target="_blank">
+                        <a href="https://github.com/joseisaias06/LightsOutGame" target="_blank" aria-label="Go to the Project's GitHub Repository">
                             <figure>
-                                <img src="/images/lights_out.png" alt="Project Image"/>
+                                <img src="images/lights_out.png" alt="Project Image"/>
                             </figure>
                         </a>
                     </div>
                     <div class="card-text-right">
-                        <a href="https://github.com/joseisaias06/LightsOutGame" target="_blank" class="project-title fs-2">
+                        <a href="https://github.com/joseisaias06/LightsOutGame" target="_blank" class="project-title fs-2"  aria-label="Go to the Project's GitHub Repository">
                             Lights Out
                         </a>
                         <p class="project-description">
@@ -161,7 +118,7 @@
                             <span class="button-tag">Console Application</span>
                         </div>
                         <div class="project-description-buttons">
-                            <a href="https://github.com/joseisaias06/LightsOutGame" target="_blank" class="btn btn-secondary me-1">
+                            <a href="https://github.com/joseisaias06/LightsOutGame" target="_blank" class="btn btn-secondary me-1"  aria-label="Go to the Project's GitHub Repository">
                                 <i class="fa-brands fa-github"></i>
                             </a>
                             <a class="btn btn-secondary">
@@ -173,14 +130,14 @@
 
                 <div class="project-card background-secondary">
                     <div class="img-right">
-                        <a href="https://github.com/joseisaias06/FER_Spotify_Recommender" target="_blank">
+                        <a href="https://github.com/joseisaias06/FER_Spotify_Recommender" target="_blank"  aria-label="Go to the Project's GitHub Repository">
                             <figure>
-                                <img src="/images/fer_spotify.png" alt="Project Image"/>
+                                <img src="images/fer_spotify.png" alt="Project Image"/>
                             </figure>  
                         </a>
                     </div>
                     <div class="card-text-left">
-                        <a href="https://github.com/joseisaias06/FER_Spotify_Recommender" target="_blank" class="project-title fs-2">
+                        <a href="https://github.com/joseisaias06/FER_Spotify_Recommender" target="_blank" class="project-title fs-2"  aria-label="Go to the Project's GitHub Repository">
                             FER Spotify Music Recommender
                         </a>
                         <p class="project-description">
@@ -196,7 +153,7 @@
                             <span class="button-tag">Tekore</span>
                         </div>
                         <div class="project-description-buttons">
-                            <a href="https://github.com/joseisaias06/FER_Spotify_Recommender" target="_blank" class="btn btn-secondary me-1">
+                            <a href="https://github.com/joseisaias06/FER_Spotify_Recommender" target="_blank" class="btn btn-secondary me-1"  aria-label="Go to the Project's GitHub Repository">
                                 <i class="fa-brands fa-github"></i>
                             </a>
                             <a class="btn btn-secondary">
@@ -208,14 +165,14 @@
 
                 <div class="project-card background-secondary">
                     <div class="img-left">
-                        <a href="https://medium.com/@a219212278/dota-2-draft-recommender-system-using-lightgbm-and-mcts-f60678c3ce0" target="_blank">
+                        <a href="https://medium.com/@a219212278/dota-2-draft-recommender-system-using-lightgbm-and-mcts-f60678c3ce0" target="_blank"  aria-label="Go to the Project's Medium Post">
                             <figure>
-                                <img src="/images/dota_recommender.png" alt="Project Image"/>
+                                <img src="images/dota_recommender.png" alt="Project Image"/>
                             </figure>
                         </a>
                     </div>
                     <div class="card-text-right">
-                        <a href="https://medium.com/@a219212278/dota-2-draft-recommender-system-using-lightgbm-and-mcts-f60678c3ce0" target="_blank" class="project-title fs-2">
+                        <a href="https://medium.com/@a219212278/dota-2-draft-recommender-system-using-lightgbm-and-mcts-f60678c3ce0" target="_blank" class="project-title fs-2" aria-label="Go to the Project's Medium Post">
                             Dota 2 Heroes Recommender System
                         </a>
                         <p class="project-description">
@@ -233,10 +190,10 @@
 
                         </div>
                         <div class="project-description-buttons">
-                            <a href="https://github.com/joseisaias06/DotaRecommender" target="_blank" class="btn btn-secondary me-1">
+                            <a href="https://github.com/joseisaias06/DotaRecommender" target="_blank" class="btn btn-secondary me-1"  aria-label="Go to the Project's GitHub Repository">
                                 <i class="fa-brands fa-github"></i>
                             </a>
-                            <a href="https://medium.com/@a219212278/dota-2-draft-recommender-system-using-lightgbm-and-mcts-f60678c3ce0" target="_blank" class="btn btn-secondary">
+                            <a href="https://medium.com/@a219212278/dota-2-draft-recommender-system-using-lightgbm-and-mcts-f60678c3ce0" target="_blank" class="btn btn-secondary" aria-label="Go to the Project's Medium Post">
                                 <i class="fa-solid fa-up-right-from-square"></i>
                             </a>    
                         </div>
@@ -245,14 +202,14 @@
                 
                 <div class="project-card background-secondary">
                     <div class="img-right">
-                        <a href="https://github.com/joseisaias06/WorldCupsInteractiveView">
+                        <a href="https://github.com/joseisaias06/WorldCupsInteractiveView" aria-label="Go to the Project's GitHub Repository">
                             <figure>
-                                <img src="/images/fifa_sql.png" alt="Project Image"/>
+                                <img src="images/fifa_sql.png" alt="Project Image"/>
                             </figure>
                         </a>
                     </div>
                     <div class="card-text-left">
-                        <a href="https://github.com/joseisaias06/WorldCupsInteractiveView" class="project-title fs-2">
+                        <a href="https://github.com/joseisaias06/WorldCupsInteractiveView" class="project-title fs-2" aria-label="Go to the Project's GitHub Repository">
                             World Cups Interactive View
                         </a>
                         <p class="project-description">
@@ -265,7 +222,7 @@
                             <span class="button-tag">Django</span>
                         </div>
                         <div class="project-description-buttons">
-                            <a href="https://github.com/joseisaias06/WorldCupsInteractiveView" class="btn btn-secondary me-1">
+                            <a href="https://github.com/joseisaias06/WorldCupsInteractiveView" class="btn btn-secondary me-1" aria-label="Go to the Project's GitHub Repository">
                                 <i class="fa-brands fa-github"></i>
                             </a>
                             <a class="btn btn-secondary">
@@ -292,13 +249,13 @@
                 <a href="https://www.linkedin.com/in/jos%C3%A9-isaias-olmos-morales-4181a8248" class="button-media"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
                 <a href="https://www.instagram.com/joseisaiasom/" class="button-media"><i class="fab fa-instagram" aria-hidden="true"></i></a>
             </div>
-            <a class="mt-3" href="mailto:isaias_olmos06@hotmail.com" style="text-decoration: none; color: lightslategrey;">
+            <a class="mt-3" class="email-link" href="mailto:isaias_olmos06@hotmail.com">
             isaias_olmos06@hotmail.com
             </a>
         </div>
 
         <footer class="footer">
-            © Copyright 2022. Made by <a href="https://github.com/joseisaias06/joseisaias06.github.io" style="color: lightslategrey;">Isaias Olmos</a>
+            © Copyright 2022. Made by <a class="footer-link" href="https://github.com/joseisaias06/joseisaias06.github.io" aria-label="Github Profile">Isaias Olmos</a>
         </footer>
 
         <script type="text/javascript">
